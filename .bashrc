@@ -137,7 +137,7 @@ alias H="cat $HOME/Work/hosts.csv | grep -i"
 alias HPING="cat $HOME/Tmp/hosts.csv | fzf -e | cut -d ',' -f1 | xargs -I '{}' ping {}"
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 alias F="fzf -e --reverse | xargs -I {}  xdg-open {} "
-alias V="fzf -e --reverse | xargs -I {} nvim {} "
+alias V="find ~ * | fzf -e --reverse | xargs -I {} nvim {} "
 alias P="sxiv *"
 alias C="curl -L covid19.trackercli.com/hr"
 alias R="curl usd.rate.sx"
@@ -148,7 +148,6 @@ alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias T="watch sensors k10temp-pci-*"
 alias O="xdg-open"
 
-#Set PS1
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then

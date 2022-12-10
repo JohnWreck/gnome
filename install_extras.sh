@@ -3,6 +3,7 @@
 package=(
 
 #akmod-nvidia
+#cmus
 #network-manager-gnome
 #network-manager-openvpn-gnome
 #remmina
@@ -10,7 +11,8 @@ package=(
 #subliminal
 bc
 bmon
-#cmus
+gnome-extensions-app
+gnome-shell-extension-appindicator
 gpick
 grc
 htop

@@ -53,6 +53,3 @@ dnf install ${package[*]}
 
 ## Fedora workstation repos, enable Google Chrome
 #dnf config-manager --set-enabled google-chrome
-
-## Set locale
-# cp $HOME/.dotfiles/locale.conf /etc/locale.conf

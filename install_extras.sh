@@ -42,6 +42,7 @@ thunderbird
 transmission
 whois
 wireshark
+xset
 )
 
 ##RPMFusion setup free/nonfree

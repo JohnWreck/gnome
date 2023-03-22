@@ -72,6 +72,7 @@ alias R="curl usd.rate.sx"
 alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias O="xdg-open"
 alias W="curl wttr.in"
+alias T="watch sensors k10temp-pci-*"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

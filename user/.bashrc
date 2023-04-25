@@ -35,10 +35,10 @@ if [ -f /etc/profile.d/bash_completion.sh ]; then
 fi
 
 #Set keyboard speed
-xset r rate 200 40
+#xset r rate 200 40
 
 #Disable Xorg bell (hint: xset q)
-xset b off
+#xset b off
 
 #Set PS1
 force_color_prompt=yes

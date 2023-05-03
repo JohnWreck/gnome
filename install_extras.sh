@@ -20,7 +20,6 @@ git
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks
-gnome-tweaks
 gpick
 grc
 htop

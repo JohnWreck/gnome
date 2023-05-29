@@ -28,6 +28,12 @@ unset rc
 
 ## Custom settings ##
 
+#Exec Tmux
+
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 #Bash completion
 
 if [ -f /etc/profile.d/bash_completion.sh ]; then

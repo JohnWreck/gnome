@@ -35,6 +35,7 @@ net-tools
 nethogs
 nmap
 nnn
+nvtop
 p7zip
 papirus-icon-theme
 pip

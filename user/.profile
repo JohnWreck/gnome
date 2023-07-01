@@ -8,8 +8,8 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
+#export EDITOR=/usr/bin/nvim
+#export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
 export VIDEO=/usr/bin/mpv
 #export COLORTERM="truecolor"

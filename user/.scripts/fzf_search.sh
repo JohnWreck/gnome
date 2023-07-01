@@ -2,6 +2,6 @@
 
 cd $HOME
 
-search=$(fzf-tmux --no-info --border=rounded --height=100%)
+search=$(fzf --no-info --border=rounded --height=100%)
 tmux new-window nnn -d -e -i "${search}" 
 

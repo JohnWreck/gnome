@@ -54,30 +54,24 @@ vnoremap <C-c> "+y
 " Disable Highlight match
 :let loaded_matchparen = 1
 
+colorscheme habamax
+
 " Automated installation of vimplug if not installed
-if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
-        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
-endif
-
-call plug#begin('~/.config/nvim/plugged')
-
-Plug 'morhetz/gruvbox'
-Plug 'tomasiser/vim-code-dark'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-"Plug 'preservim/nerdtree'
-
-" Install pip install black
-"Plug 'psf/black', { 'branch': 'stable' }
+"if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+"    silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+"        \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
+"endif
 "
-" Install nodejs ie. dnf install nodejs, install yarn ie. npm install yarn
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-
-call plug#end()
-
-let g:gruvbox_contrast_dark = 'hard'
+"call plug#begin('~/.config/nvim/plugged')
+"
+"Plug 'morhetz/gruvbox'
+"Plug 'tomasiser/vim-code-dark'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
+"
+"call plug#end()
+"
+"let g:gruvbox_contrast_dark = 'hard'
 "colorscheme gruvbox
-colorscheme codedark
+"colorscheme codedark

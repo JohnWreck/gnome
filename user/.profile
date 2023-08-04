@@ -8,15 +8,15 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+#export COLORTERM="truecolor"
 #export EDITOR=/usr/bin/nvim
+#export LESS="-R"
+#export OPENER="xdg-open"
+#export TERM=/usr/bin/gnome-terminal
 #export VISUAL=/usr/bin/nvim
 export BROWSER=/usr/bin/firefox
-export VIDEO=/usr/bin/mpv
-#export COLORTERM="truecolor"
-#export TERM=/usr/bin/gnome-terminal
-#export OPENER="xdg-open"
-#export LESS="-R"
 export LESS='--mouse'
+export VIDEO=/usr/bin/mpv
 
-export NNN_PLUG='d:diffs;m:nmount;v:imgview;o:fzopen'
+#export NNN_PLUG='d:diffs;m:nmount;v:imgview;o:fzopen'
 

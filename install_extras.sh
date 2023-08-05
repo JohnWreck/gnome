@@ -19,6 +19,8 @@ flameshot
 flatpak
 fzf
 git
+google-roboto-slab-fonts
+google-roboto-fonts
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks

@@ -4,24 +4,24 @@ package=(
 
 #NetworkManager-openvpn-gnome
 #akmod-nvidia
+#alacritty
+#bc
 #cmus
+#grc
 #network-manager-gnome
 #nvidia-vaapi-driver
 #remmina
 #remmina-plugin-rdp
 #subliminal
-alacritty
-bc
 bmon
 cifs-utils
 flameshot
+flatpak
 fzf
 git
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks
-gpick
-grc
 htop
 iftop
 iotop
@@ -52,16 +52,13 @@ yaru-theme
 
 )
 
-##RPMFusion setup free/nonfree
+## RPMFusion setup free/nonfree
 dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
             https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 dnf update
 dnf install ${package[*]}
 
-## Fedora workstation repos, enable Google Chrome
-#dnf config-manager --set-enabled google-chrome
+## Install Flathub
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-## Fedora codecs
-#sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-#sudo dnf groupupdate sound-and-video

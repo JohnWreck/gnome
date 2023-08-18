@@ -74,7 +74,7 @@ fi
 #alias R="curl usd.rate.sx"
 alias F=$HOME/.scripts/fzf_open.sh
 alias ll='ls -alFht'
-alias UP="sudo dnf update; flatpak update"
+alias UP="sudo dnf update;sudo flatpak update"
 alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias O="xdg-open"
 alias W="curl wttr.in"

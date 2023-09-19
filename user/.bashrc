@@ -69,7 +69,7 @@ else
 fi
 
 # Alias
-#alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
+alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 #alias Y="ytfzf --thumb-viewer=kitty -t"
 #alias R="curl usd.rate.sx"
 alias F=$HOME/.scripts/fzf_open.sh

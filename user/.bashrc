@@ -30,7 +30,7 @@ unset rc
 
 export EDITOR=/usr/bin/nvim
 
-#Exec Tmux
+## Exec Tmux
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux

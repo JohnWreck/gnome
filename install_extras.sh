@@ -14,13 +14,14 @@ package=(
 #remmina-plugin-rdp
 #subliminal
 bmon
+btop
 cifs-utils
 flameshot
-flatpak
+#flatpak
 fzf
 git
-google-roboto-slab-fonts
-google-roboto-fonts
+#google-roboto-slab-fonts
+#google-roboto-fonts
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks
@@ -49,18 +50,20 @@ tmux
 transmission
 whois
 wireshark
-xset
+#xset
 yaru-theme
+gstreamer1-plugin-openh264
+mozilla-openh264
 
 )
 
 ## RPMFusion setup free/nonfree
-dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
-            https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+#            https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 dnf update
 dnf install ${package[*]}
 
 ## Install Flathub
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+#flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 

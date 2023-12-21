@@ -1,4 +1,6 @@
 # .bashrc
+#
+
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -30,7 +32,7 @@ unset rc
 
 export EDITOR=/usr/bin/nvim
 
-## Exec Tmux
+# Exec Tmux
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
@@ -68,6 +70,10 @@ else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
 
+function RDP () {
+    xfreerdp /u:$1 /w:1920 /h:1080 /dynamic-resolution -grab-keyboard /kbd:Croatian /drive:$HOME/Downloads/rdptools /v:$2 
+}
+
 # Alias
 alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
 #alias Y="ytfzf --thumb-viewer=kitty -t"
@@ -79,6 +85,7 @@ alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
 alias O="xdg-open"
 alias W="curl wttr.in"
 alias T="watch sensors k10temp-pci-*"
+alias R=RDP
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

@@ -31,6 +31,7 @@ unset rc
 ## Custom settings ##
 
 export EDITOR=/usr/bin/nvim
+export LESS='--mouse'
 
 # Exec Tmux
 

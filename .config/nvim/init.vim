@@ -63,14 +63,14 @@ colorscheme habamax
 "    autocmd VimEnter * PlugInstall --sync | source ~/.config/nvim/init.vim
 "endif
 "
-"call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 "
 "Plug 'morhetz/gruvbox'
 "Plug 'tomasiser/vim-code-dark'
 "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf.vim'
 "
-"call plug#end()
+call plug#end()
 "
 "let g:gruvbox_contrast_dark = 'hard'
 "colorscheme gruvbox

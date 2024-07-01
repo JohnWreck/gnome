@@ -76,9 +76,6 @@ function RDP () {
 }
 
 # Alias
-alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
-#alias Y="ytfzf --thumb-viewer=kitty -t"
-#alias R="curl usd.rate.sx"
 alias F=$HOME/.scripts/fzf_open.sh
 alias ll='ls -alFht'
 alias UP="sudo dnf update --refresh; flatpak update"
@@ -87,6 +84,7 @@ alias O="xdg-open"
 alias W="curl wttr.in"
 alias T="watch sensors k10temp-pci-*"
 alias R=RDP
+alias VT="~/Work/cs/sh/vt.sh"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

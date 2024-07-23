@@ -32,10 +32,12 @@ unset rc
 
 export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
+export FZF_DEFAULT_OPTS="--walker=file,dir --info=inline-right --highlight-line --border=rounded"
 
 # Exec Tmux
 
-if command -v tmux &> /dev/null && [[ -n "$PS1" ]] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [[ -z "$TMUX" ]] && [[ ! $(pgrep tmux) ]]; then
+if command -v tmux &> /dev/null && [[ -n "$PS1" ]] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [[ -z "$TMUX" ]] && [[ ! $(pgrep tmux) ]];
+then
   exec tmux
 fi
 
@@ -76,6 +78,9 @@ function RDP () {
 }
 
 # Alias
+alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
+#alias Y="ytfzf --thumb-viewer=kitty -t"
+#alias R="curl usd.rate.sx"
 alias F=$HOME/.scripts/fzf_open.sh
 alias ll='ls -alFht'
 alias UP="sudo dnf update --refresh; flatpak update"

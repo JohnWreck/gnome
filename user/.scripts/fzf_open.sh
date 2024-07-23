@@ -2,6 +2,5 @@
 
 cd $HOME
 
-search=$(fzf --no-info --border=rounded --height=100%)
-nnn -d -e -i "${search}" 
+nnn -d -e -i $(fzf)
 

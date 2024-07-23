@@ -2,6 +2,4 @@
 
 cd $HOME
 
-tmux new-window nnn -d -e -i $(fzf)
-
-#nnn -d -e -i $(fzf $param)
+nnn -d -e -i $(fzf)

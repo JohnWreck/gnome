@@ -1,6 +1,3 @@
-# .bashrc
-#
-
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
@@ -32,7 +29,7 @@ unset rc
 
 export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
-export FZF_DEFAULT_OPTS="--walker=file,dir --info=inline-right --highlight-line --border=rounded"
+export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded'
 
 # Exec Tmux
 
@@ -78,18 +75,15 @@ function RDP () {
 }
 
 # Alias
-alias YT="youtube-dl -x --audio-format mp3 --audio-quality 0"
-#alias Y="ytfzf --thumb-viewer=kitty -t"
-#alias R="curl usd.rate.sx"
-alias F=$HOME/.scripts/fzf_open.sh
+alias F='$HOME/.scripts/fzf_search.sh'
 alias ll='ls -alFht'
-alias UP="sudo dnf update --refresh; flatpak update"
-alias RS="mpv http://161.53.122.184:8000/AAC128.aac"
-alias O="xdg-open"
-alias W="curl wttr.in"
-alias T="watch sensors k10temp-pci-*"
+alias UP='sudo dnf update --refresh; flatpak update'
+alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
+alias O='xdg-open'
+alias W='curl wttr.in'
+alias T='watch sensors k10temp-pci-*'
 alias R=RDP
-alias VT="~/Work/cs/sh/vt.sh"
+alias VT='~/Work/cs/sh/vt.sh'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

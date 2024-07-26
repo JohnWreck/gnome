@@ -29,7 +29,7 @@ unset rc
 
 export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
-export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded'
+export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
 
 # Exec Tmux
 

@@ -9,7 +9,7 @@ for i in $(ls -1A ~/.gdots/user/); do ln -vs ~/.gdots/user/$i ~/$i; done
 
 ## Install Papirus Folders
 #source ~/.gdots/user/.scripts/papirus-folders-install
-#papirus-folders -C black --theme Papirus-Dark
+#papirus-folders -C black --theme Papirus
 
 ## Setup dconf
 source ~/.gdots/dconf/setup_dconf.sh

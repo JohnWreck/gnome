@@ -29,14 +29,16 @@ set nolist
 
 
 " Status Line (left)
-set statusline=
+"set statusline=
 set statusline+=\ %m
 set statusline+=\ %r
-set statusline+=\ %y
 set statusline+=\ %F
 
 " Status Line (right)
 set statusline+=%=
+set statusline+=\ %y
+set statusline+=\ [%{&fileformat}]
+set statusline+=\ [%{&fileencoding}]
 set statusline+=\ %c:%l/%L
 set statusline+=\ %p%%
 

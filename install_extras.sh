@@ -32,6 +32,7 @@ iftop
 iotop
 iperf3
 iptraf-ng
+jetbrains-mono-fonts-all
 lm_sensors
 mozilla-fira-fonts-common
 mozilla-fira-mono-fonts

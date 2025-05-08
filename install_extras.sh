@@ -26,7 +26,7 @@ git
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks
-gstreamer1-plugin-openh264
+#gstreamer1-plugin-openh264
 htop
 iftop
 iotop
@@ -37,7 +37,7 @@ lm_sensors
 mozilla-fira-fonts-common
 mozilla-fira-mono-fonts
 mozilla-fira-sans-fonts
-mozilla-openh264
+#mozilla-openh264
 mpv
 ncdu
 neovim
@@ -50,7 +50,7 @@ p7zip
 papirus-icon-theme
 pip
 rsync
-speedtest-cli
+#speedtest-cli
 syncthing
 thunderbird
 tmux

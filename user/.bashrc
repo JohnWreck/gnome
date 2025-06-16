@@ -83,7 +83,7 @@ alias O='xdg-open'
 alias W='curl wttr.in'
 alias T='watch sensors k10temp-pci-*'
 alias R=RDP
-alias VT='~/Work/cs/sh/vt.sh'
+alias VT='$HOME/Work/cs/sh/vt.sh'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

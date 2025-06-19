@@ -43,4 +43,6 @@
 # resize-overlay-duration = 4s 200ms
 
 theme = GruvboxDark
-window-decoration = false
+#window-decoration = false
+window-height = 60
+window-width = 120

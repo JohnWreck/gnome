@@ -76,7 +76,7 @@ function RDP () {
 
 # Alias
 alias F='$HOME/.scripts/fzf_search.sh'
-alias ls='lsd'
+#alias ls='lsd'
 alias ll='ls -alFht'
 alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'

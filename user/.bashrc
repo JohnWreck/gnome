@@ -30,6 +30,8 @@ unset rc
 export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
 export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
+export NNN_TRASH=1
+export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
 
 # Exec Tmux
 

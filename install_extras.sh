@@ -56,6 +56,7 @@ syncthing
 thunderbird
 tmux
 transmission
+trash-cli
 whois
 wireshark
 yaru-theme

@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Smart nnn opener: handles text, scripts, binaries, and GUI files
+
+file="$1"
+
+if [ -z "$file" ]; then
+    echo "No file specified" >&2
+    exit 1
+fi
+
+# Determine MIME type
+mimetype=$(file --mime-type -b "$file")
+editor="${EDITOR:-nvim}"
+
+# List of extensions for nvim
+case "${file##*.}" in
+    txt|log|sh)
+        open_in_editor=true
+        ;;
+    *)
+        # Determine if file is text
+        if [[ "$mimetype" == text/* ]]; then
+            open_in_editor=true
+        else
+            open_in_editor=false
+        fi
+        ;;
+esac
+
+if [ "$open_in_editor" = true ]; then
+    if [ -n "$TMUX" ]; then
+        # Open in new vertical tmux split and auto-close
+        tmux split-window -h bash -lc "$editor '$file'; tmux kill-pane"
+    else
+        $editor "$file"
+    fi
+else
+    # Open binary / GUI-friendly files
+    xdg-open "$file" >/dev/null 2>&1 &
+fi
+

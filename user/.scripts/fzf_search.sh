@@ -2,4 +2,4 @@
 
 cd $HOME
 
-nnn -d -R -A -H -i $(fzf)
+nnn -dRAHi $(fzf)

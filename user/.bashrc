@@ -31,7 +31,7 @@ export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
 export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
 export NNN_TRASH=1
-export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
+#export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
 
 # Exec Tmux
 
@@ -87,7 +87,7 @@ alias W='curl wttr.in'
 alias T='watch sensors k10temp-pci-*'
 alias R=RDP
 alias VT='$HOME/Work/cs/sh/vt.sh'
-alias N='nnn -dRAHi'
+alias N='nnn -dRAi'
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

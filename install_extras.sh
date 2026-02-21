@@ -35,9 +35,9 @@ iptraf-ng
 jetbrains-mono-fonts-all
 lm_sensors
 lsd
-mozilla-fira-fonts-common
-mozilla-fira-mono-fonts
-mozilla-fira-sans-fonts
+#mozilla-fira-fonts-common
+#mozilla-fira-mono-fonts
+#mozilla-fira-sans-fonts
 #mozilla-openh264
 mpv
 ncdu

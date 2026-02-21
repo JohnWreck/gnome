@@ -42,7 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-theme = GruvboxDark
+title = Ghostty
+theme = Gruvbox Dark Hard
 #window-decoration = false
 window-height = 60
 window-width = 140

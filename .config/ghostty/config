@@ -47,4 +47,4 @@ theme = Gruvbox Dark Hard
 #window-decoration = false
 window-height = 60
 window-width = 140
-
+keybind = clear

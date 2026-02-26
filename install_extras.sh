@@ -11,10 +11,13 @@ package=(
 #google-roboto-fonts
 #google-roboto-slab-fonts
 #grc
+#gstreamer1-plugin-openh264
+#mozilla-openh264
 #network-manager-gnome
 #nvidia-vaapi-driver
 #remmina
 #remmina-plugin-rdp
+#speedtest-cli
 #subliminal
 #xset
 bmon
@@ -26,7 +29,6 @@ git
 gnome-extensions-app
 gnome-shell-extension-appindicator
 gnome-tweaks
-#gstreamer1-plugin-openh264
 htop
 iftop
 iotop
@@ -35,10 +37,6 @@ iptraf-ng
 jetbrains-mono-fonts-all
 lm_sensors
 lsd
-#mozilla-fira-fonts-common
-#mozilla-fira-mono-fonts
-#mozilla-fira-sans-fonts
-#mozilla-openh264
 mpv
 ncdu
 neovim
@@ -51,7 +49,7 @@ p7zip
 papirus-icon-theme
 pip
 rsync
-#speedtest-cli
+script
 syncthing
 thunderbird
 tmux

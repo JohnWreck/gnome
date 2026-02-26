@@ -1,4 +1,3 @@
-
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
@@ -46,20 +45,11 @@ if [ -f /etc/profile.d/bash_completion.sh ]; then
     . /etc/profile.d/bash_completion.sh
 fi
 
-#Set keyboard speed
-#xset r rate 200 40
-
-#Disable Xorg bell (hint: xset q)
-#xset b off
-
 #Set PS1
 force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
 	color_prompt=yes
     else
 	color_prompt=
@@ -72,20 +62,12 @@ else
     PS1='┌──[\u@\h]─[\w]\n└──╼ \$ '
 fi
 
-function RDP () {
-    xfreerdp /u:$1 /w:1920 /h:1080 /dynamic-resolution -grab-keyboard /kbd:Croatian /drive:$HOME/Downloads/rdptools /v:$2 
-}
-
 # Alias
 alias F='$HOME/.scripts/fzf_search.sh'
-#alias ls='lsd'
 alias ll='ls -alFht'
 alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
 alias O='xdg-open'
-alias W='curl wttr.in'
-alias T='watch sensors k10temp-pci-*'
-alias R=RDP
 alias VT='$HOME/Work/cs/sh/vt.sh'
 alias N='nnn -dRAi'
 

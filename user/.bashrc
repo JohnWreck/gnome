@@ -31,6 +31,7 @@ export LESS='--mouse'
 export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
 export NNN_TRASH=1
 #export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
+export GNOME_SHELL_SLOWDOWN_FACTOR=0.6
 
 # Exec Tmux
 

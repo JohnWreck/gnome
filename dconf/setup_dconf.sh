@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-dconf load / < dconf_kbd.ini
-#dconf load / < dconf_terminal.ini
+dconf load / < kbd.ini
+#dconf load / < terminal.ini
 echo "Done"

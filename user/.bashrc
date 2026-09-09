@@ -65,12 +65,24 @@ fi
 
 # Alias
 alias F='$HOME/.scripts/fzf_search.sh'
-alias ll='ls -alFht'
 alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
 alias O='xdg-open'
 alias VT='$HOME/Work/cs/sh/vt.sh'
 alias N='nnn -dRAi'
+
+if command -v lsd >/dev/null 2>&1; then
+    alias ls='lsd -Fh'
+else
+    alias ls='ls -Fh'
+fi
+
+if command -v lsd >/dev/null 2>&1; then
+    alias ll='lsd -alFht'
+else
+    alias ll='ls -alFht'
+fi
+
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then

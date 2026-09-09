@@ -14,6 +14,7 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'ellisonleao/gruvbox.nvim'
+  use 'xero/miasma.nvim'
   use {
       'nvim-telescope/telescope.nvim', tag = '0.1.8',
       -- or                            , branch = '0.1.x',

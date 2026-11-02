@@ -47,9 +47,9 @@
 #theme = HaX0R Gr33N
 #theme = Matrix
 #theme = Retro Legends
-#window-decoration = false
+window-decoration = false
 theme = Miasma
 title = Ghostty
 window-height = 60
 window-width = 140
-font-size = 11
+font-size = 10

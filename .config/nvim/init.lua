@@ -1,5 +1,10 @@
-require("core.keymaps")
-require("core.options")
-require("core.packer")
-require("core.plugins_config")
-require("core.cmd")
+
+-- ==========================================
+-- Neovim Configuration
+-- ==========================================
+
+require("options")
+require("keymaps")
+require("colors")
+require("statusline")
+

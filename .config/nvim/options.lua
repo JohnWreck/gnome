@@ -12,11 +12,16 @@ vim.opt.mouse = "a"
 -- Indentation
 -- ==========================================
 
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.expandtab = true
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
+
+-- Preserve indentation when wrapping lines
+vim.opt.breakindent = true
 
 -- ==========================================
 -- Search
@@ -52,3 +57,19 @@ vim.opt.listchars = {
 
 vim.opt.clipboard = "unnamedplus"
 
+-- ==========================================
+-- Spell Checking
+-- ==========================================
+
+vim.opt.spelllang = { "en", "hr" }
+vim.opt.spell = true
+
+-- ==========================================
+-- Syntax Highlighting
+-- ==========================================
+
+vim.opt.syntax = "on"
+vim.opt.termguicolors = true
+
+-- Enable filetype detection, plugins and indentation
+vim.cmd("filetype plugin indent on")

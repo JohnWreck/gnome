@@ -42,5 +42,5 @@ wireshark
 
 )
 
-dnf update
+dnf update --refresh
 dnf install ${package[*]}

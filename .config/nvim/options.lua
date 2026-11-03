@@ -62,7 +62,7 @@ vim.opt.clipboard = "unnamedplus"
 -- ==========================================
 
 vim.opt.spelllang = { "en", "hr" }
-vim.opt.spell = true
+vim.opt.spell = false
 
 -- ==========================================
 -- Syntax Highlighting

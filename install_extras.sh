@@ -6,6 +6,7 @@ package=(
 
 #gstreamer1-plugin-openh264
 #mozilla-openh264
+alacritty
 bmon
 btop
 flameshot

@@ -73,3 +73,7 @@ vim.opt.termguicolors = true
 
 -- Enable filetype detection, plugins and indentation
 vim.cmd("filetype plugin indent on")
+
+-- Disable providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0

@@ -8,6 +8,18 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.mouse = "a"
 
+-- Enable filetype detection, plugins and indentation
+vim.cmd("filetype plugin indent on")
+
+-- Disable providers
+vim.g.loaded_node_provider = 0
+vim.g.loaded_perl_provider = 0
+
+-- Themes
+vim.opt.termguicolors = true
+--vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("gruvbox")
+
 -- ==========================================
 -- Indentation
 -- ==========================================
@@ -70,16 +82,3 @@ vim.opt.spell = false
 
 vim.opt.syntax = "on"
 vim.opt.termguicolors = true
-
--- Enable filetype detection, plugins and indentation
-vim.cmd("filetype plugin indent on")
-
--- Disable providers
-vim.g.loaded_node_provider = 0
-vim.g.loaded_perl_provider = 0
-
--- Themes
-vim.opt.termguicolors = true
---vim.cmd.colorscheme("habamax")
-vim.cmd.colorscheme("gruvbox")
-

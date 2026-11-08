@@ -32,5 +32,6 @@ white   = "#ebdbb2"
 
 [window]
 decorations = "None"
-dimensions = { columns = 140, lines = 50 }
+dimensions = { columns = 160, lines = 55 }
 padding = { x = 10, y = 5 }
+opacity = 0.95

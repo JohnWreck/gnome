@@ -30,6 +30,8 @@ export EDITOR=/usr/bin/nvim
 export LESS='--mouse'
 export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
 export NNN_TRASH=1
+export NNN_FCOLORS='6C8E6D6C00AF6DF4A7AC8EA7'
+export NNN_COLORS='#0a0a0a0a'
 #export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
 export GNOME_SHELL_SLOWDOWN_FACTOR=0.6
 
@@ -69,7 +71,7 @@ alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
 alias O='xdg-open'
 alias VT='$HOME/Work/cs/sh/vt.sh'
-alias N='nnn -dRAi'
+alias N='nnn -dRAie'
 
 if command -v lsd >/dev/null 2>&1; then
     alias ls='lsd -Fh'

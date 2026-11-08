@@ -33,3 +33,4 @@ white   = "#ebdbb2"
 [window]
 decorations = "None"
 dimensions = { columns = 140, lines = 50 }
+padding = { x = 10, y = 5 }

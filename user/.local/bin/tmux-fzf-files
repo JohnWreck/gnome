@@ -3,11 +3,11 @@
 mode="${1:-split}"
 
 selected="$(
-    find $HOME/ -type f -not -path './.git/*' 2>/dev/null |
+    find $HOME -type f -not -path './.git/*' 2>/dev/null |
     fzf --reverse \
         --border \
         --prompt="Files > " \
-        --preview='bat --color=always --style=numbers --line-range=:100 {} 2>/dev/null'
+        #--preview='bat --color=always --style=numbers --line-range=:100 {} 2>/dev/null'
 )" || exit 0
 
 [ -z "$selected" ] && exit 0

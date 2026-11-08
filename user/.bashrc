@@ -66,7 +66,7 @@ else
 fi
 
 # Alias
-alias F='$HOME/.scripts/fzf_search.sh'
+alias F='fzf_search'
 alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
 alias O='xdg-open'

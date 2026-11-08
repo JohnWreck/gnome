@@ -9,6 +9,5 @@ package.path = config_path .. "/?.lua;" .. package.path
 
 require("options")
 require("keymaps")
-require("colors")
 require("statusline")
 

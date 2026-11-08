@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 package=(
 
 #gstreamer1-plugin-openh264
@@ -42,5 +44,5 @@ wireshark
 
 )
 
-dnf update --refresh
-dnf install ${package[*]}
+sudo dnf update --refresh
+sudo dnf install ${package[*]}

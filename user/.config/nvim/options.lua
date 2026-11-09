@@ -82,3 +82,4 @@ vim.opt.spell = false
 
 vim.opt.syntax = "on"
 vim.opt.termguicolors = true
+

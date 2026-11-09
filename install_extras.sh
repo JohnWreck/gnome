@@ -9,6 +9,7 @@ package=(
 alacritty
 bmon
 btop
+fd
 flameshot
 fzf
 git

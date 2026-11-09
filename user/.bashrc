@@ -27,13 +27,26 @@ unset rc
 ## Custom settings ##
 
 export EDITOR=/usr/bin/nvim
-export LESS='--mouse'
+export LESS='--mouse -FRX'
 export FZF_DEFAULT_OPTS='--walker=file,dir --info=inline-right --highlight-line --border=rounded --reverse'
 export NNN_TRASH=1
 export NNN_FCOLORS='6C8E6D6C00AF6DF4A7AC8EA7'
 export NNN_COLORS='#0a0a0a0a'
 #export NNN_OPENER="$HOME/.scripts/nnn-tmux-open"
 export GNOME_SHELL_SLOWDOWN_FACTOR=0.6
+export FZF_DEFAULT_COMMAND='fd --type f --hidden . $HOME \
+    --exclude .git \
+    --exclude .var \
+    --exclude .cache \
+    --exclude .thunderbird \
+    --exclude Larian \
+    --exclude .steam \
+    --exclude .mozilla \
+    --exclude .npm \
+    --exclude .ssh \
+    --exclude .ansible \
+    --exclude .SteamCloud \
+    --exclude Steam'
 
 # Exec Tmux
 

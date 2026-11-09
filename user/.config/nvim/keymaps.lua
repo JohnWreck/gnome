@@ -9,12 +9,17 @@ vim.g.maplocalleader = " "
 local map = vim.keymap.set
 
 -- File explorer
-map("n", "<leader>e", vim.cmd.Ex, {
+map("n", "<leader>e", "<cmd>Explore<CR>", {
     desc = "Open file explorer",
 })
 
 -- FZF
-map("n", "<C-f>", ":Files ~<CR>", {
+map("n", "<leader>f", "<cmd>FZF<CR>", {
+    desc = "Search files from home",
+})
+
+-- Oldfiles
+map("n", "<leader>o", "<cmd>browse oldfiles<CR>", {
     desc = "Search files from home",
 })
 

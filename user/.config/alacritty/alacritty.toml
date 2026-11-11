@@ -34,4 +34,4 @@ white   = "#ebdbb2"
 decorations = "None"
 dimensions = { columns = 160, lines = 55 }
 padding = { x = 10, y = 5 }
-opacity = 0.95
+opacity = 1

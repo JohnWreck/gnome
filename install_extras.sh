@@ -4,8 +4,6 @@ set -e
 
 package=(
 
-#gstreamer1-plugin-openh264
-#mozilla-openh264
 alacritty
 bmon
 btop
@@ -48,3 +46,9 @@ wireshark
 
 sudo dnf update --refresh
 sudo dnf install ${package[*]}
+
+#sudo dnf install \
+#https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+#https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#
+#sudo dnf swap ffmpeg-free ffmpeg --allowerasing

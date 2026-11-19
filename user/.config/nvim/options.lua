@@ -51,6 +51,7 @@ vim.opt.smartcase = true
 -- ==========================================
 
 vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
 vim.opt.showmatch = true
 vim.opt.wrap = false
 vim.opt.scrolloff = 10

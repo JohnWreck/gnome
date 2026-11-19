@@ -82,7 +82,6 @@ alias F='fzf_search'
 alias UP='sudo dnf update --refresh; flatpak update'
 alias RS='mpv http://161.53.122.184:8000/AAC128.aac'
 alias O='xdg-open'
-alias VT='$HOME/Work/cs/sh/vt.sh'
 alias N='nnn -dRAie'
 
 if command -v lsd >/dev/null 2>&1; then
